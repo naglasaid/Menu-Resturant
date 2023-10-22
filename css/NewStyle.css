@@ -487,7 +487,7 @@ transition: all ease .5s;
 /* /////////////////////////////////////special menu /////////////////////////////////*/
 .special-menu-content{
 display: grid;
-grid-template-columns: auto auto auto auto;
+grid-template-columns: 1fr 1fr 1fr 1fr;
 grid-gap: 10px;
 transform-style: preserve-3d;
 /* padding: 10px 5px; */
@@ -496,18 +496,20 @@ transform-style: preserve-3d;
 
 }
 .special-menu-item{
-    width: 370px;
-    height: 400px;
-    /* padding: 10px; */
+    /* width: 370px;
+    height: 400px; */
+    padding: 10px;
     display: block;
+    /* box-shadow: 0 0 10px silver; */
+    text-align: center;
     /* position: relative; */
 }
 
 
 .special-menu-item img{ 
-    width: 100%;
+    width: 98%;
     height: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   border-radius: 5px;
   
     
@@ -531,7 +533,7 @@ transform-style: preserve-3d;
 
 
 .special-menu-item-desc{
-    width: 100%;
+    width: 98%;
 
 padding: 15px ;
 padding-bottom: 20px;
@@ -543,6 +545,8 @@ position: relative;
 
 /* margin-top: -90px; */
 border-radius: 5px;
+margin: auto;
+text-align: justify;
 }
 
 
@@ -569,7 +573,7 @@ line-height: 50px;
 visibility: hidden;
 border-radius: 50%;
 cursor: pointer;
-
+transition: .5s;
 }
 
 .special-menu-item-desc:hover i{
@@ -609,15 +613,16 @@ margin-top: 150px;
 
 .three-div-double-qoute {
 
-    width: 400px;
+    width: 40%;
     height:350px;
    
     /* background-color: white;  */
     border-radius: 5px;
     background-color: rgb(240, 241, 243);
-    padding: 20px ;
+    padding: 20px 10px 20px 20px ;
     flex-grow: 2;
     position: relative;
+    overflow: hidden;
    
 }
 
@@ -669,8 +674,8 @@ text-align:left;
 
 
 .three-div-img1{
-width: 125px;
-height:350px;
+width: 20%;
+min-height:350px;
 background: url("../Images/9.jpg") no-repeat;
 background-size: cover;
 background-position: center;
@@ -720,7 +725,7 @@ border-radius: 5px;
 
 
 .three-div-img2{
-    width: 125px;
+    width: 20%;
     height:350px;
     background: url("../Images/4.jpg") no-repeat;
 background-size: cover;
@@ -754,6 +759,7 @@ border-radius: 5px;
     height: 3px;
     border-radius: 5px;
     border: 0;
+    margin-top: 3px;
    
 }
 .lineblock{
@@ -769,7 +775,11 @@ border-radius: 5px;
    
     width: 100%;
     align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     column-count: 5;
+    /* column-width: 15%; */
     column-rule: 2px solid  rgb(237, 28, 36);
     border-radius: 5px;
    margin:25px auto 50px auto;
@@ -790,19 +800,26 @@ border-radius: 5px;
 
 
 .flip-img-content-item{
-    width:250px;
+    width:15%;
     height: 180px;
     text-align: center;
+    
    padding: 15px 20px;
-   /* border-right: 1px solid white; */
-  margin: auto;
+    
+  margin:  0 25px;
   border-radius: 5px;
  background-color: white;
-  /* background-color: rgba(51, 51, 51,.7); */
-  box-shadow: 0 0 10px silver;
+ border-right: 1px solid  transparent
+  /* box-shadow: 0 0 10px silver; */
+
   position: relative;
+  overflow: hidden;
  
 }
+.flip-img-content-item:hover{
+ 
+}
+
 
 
 
