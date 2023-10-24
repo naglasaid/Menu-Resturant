@@ -313,9 +313,9 @@ transition: all ease .5s;
          flex-grow: 1;
          justify-content: center;
  
-         height: 50px;
+         height: 60px;
          border-radius: 20px;
-       
+         /* padding: 15px; */
          box-shadow: 0 0 10px silver;
         
     }
@@ -358,7 +358,7 @@ transition: all ease .5s;
             height: 20px;
             border-radius: 50%;
             font-size: 14px;
-            top:10px
+            top:9px
           
         }
         
